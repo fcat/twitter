@@ -15,11 +15,11 @@ end
 group :test do
   gem 'backports'
   gem 'coveralls', :require => false
-  gem 'mime-types', '~> 1.25', :platforms => [:jruby, :ruby_18]
+  gem 'mime-types', '<= 2.3', '>= 1.25.1', :platforms => [:jruby, :ruby_18]
   gem 'rspec', '>= 2.14'
   gem 'rubocop', '>= 0.23', :platforms => [:ruby_19, :ruby_20, :ruby_21]
   gem 'simplecov', :require => false
-  gem 'timecop', '0.6.1'
+  gem 'timecop', '<= 0.7.1', '>= 0.6.1'
   gem 'webmock'
   gem 'yardstick'
 end
